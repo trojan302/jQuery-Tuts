@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Tutorials - Events and Triggers</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+		
+		$(function(){
+
+			// document has been loaded
+			$("#special").css("font-size","20px");
+			$("#special").css("color","red");
+
+			$("#special").click(function(){
+
+				$("button:not(#special)").hide();
+				$(this).css("font-size","12px");
+				$(this).css("color","black");
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	
+
+	<button  id="special" class="blod small">Button 1</button>
+	<button class="blod small">Button 2</button>
+	<button class="blod">Button 3</button>
+
+	<button>Button 4</button>
+	<button>Button 5</button>
+	<button>Button 6</button>
+
+
+</body>
+</html>

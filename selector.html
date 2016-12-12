@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery - Selectors</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<style>
+		.big{
+			font-size: 20px;
+		}
+		.small{
+			font-size: 8px;
+		}
+		#green{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	
+
+	<button class="big">Button 1</button>
+	<button id="green" class="big">Button 1.1</button>
+	<button class="big">Button 1.2</button>
+
+	<button class="small">Button 2</button>
+
+	<script>
+		
+		$(".big").hide();
+
+	</script>
+
+
+</body>
+</html>
